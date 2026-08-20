@@ -1,0 +1,14 @@
+version: 2
+updates:
+  # Application dependencies
+  - package-ecosystem: "pip"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+
+  # Build toolchain - the ecosystem most people forget.
+  # Watches .github/workflows/* and opens PRs when an action version drifts.
+  - package-ecosystem: "github-actions"
+    directory: "/"
+    schedule:
+      interval: "weekly"

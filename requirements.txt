@@ -1,0 +1,6 @@
+# Pinned deliberately behind current releases so Dependabot has real work to do.
+# These are the actual third-party imports used by app.py, processing.py,
+# pvol_derotate.py and ephem_cache.py.
+Pillow==9.0.0
+numpy==1.21.0
+scipy==1.7.0

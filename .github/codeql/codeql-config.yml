@@ -1,0 +1,17 @@
+name: "ghas-demo CodeQL config"
+
+# security-extended widens the query suite beyond the default.
+queries:
+  - uses: security-extended
+
+# THIS is the line that matters.
+#
+# By default CodeQL only treats *remote* input (HTTP request data from a web
+# framework) as untrusted. A bare function parameter is not a taint source, which
+# is why a file full of textbook sinks produced exactly one alert on the first run.
+#
+# The "local" threat model adds command-line arguments, environment variables,
+# stdin and file reads as sources. That is what connects the sources in
+# demo_findings.py to the sinks below them.
+threat-models:
+  - local
