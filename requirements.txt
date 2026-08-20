@@ -3,4 +3,4 @@
 # pvol_derotate.py and ephem_cache.py.
 Pillow==9.0.0
 numpy==1.21.0
-scipy==1.7.0
+scipy==1.18.0
