@@ -2,5 +2,5 @@
 # These are the actual third-party imports used by app.py, processing.py,
 # pvol_derotate.py and ephem_cache.py.
 Pillow==9.0.0
-numpy==1.21.0
+numpy==2.5.2
 scipy==1.7.0
